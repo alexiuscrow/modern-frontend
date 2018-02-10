@@ -1,0 +1,11 @@
+$borderColor: #a79d9d;
+$borderWidth: 1px;
+$borderR: 2px;
+$padding: 4px;
+
+.button {
+  border: $borderWidth solid $borderColor;
+  border-radius: $borderR;
+  padding: $padding;
+  cursor: pointer;
+}
