@@ -1,0 +1,20 @@
+$colorBorder: #6525a7;
+$colorBg: #862bdb;
+$colorText: #fff;
+$width: 100px;
+$widthBorder: 1px;
+$radiusBorder: 2px;
+$padding: 6px 10px;
+
+button.button {
+  border: $widthBorder solid $colorBorder;
+  border-radius: $radiusBorder;
+  background-color: $colorBg;
+  width: $width;
+  color: $colorText !important;
+  padding: $padding;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: -4px;
+}

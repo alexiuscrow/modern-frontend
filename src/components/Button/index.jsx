@@ -5,6 +5,6 @@ import './styles.scss'
 
 export default class Button extends React.Component {
     render() {
-        return <button className="button">{this.props.text}</button>
+        return <button onClick={this.props.onClick} className="button">{this.props.text}</button>
     }
 }

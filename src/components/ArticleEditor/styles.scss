@@ -1,0 +1,19 @@
+$colorBorderInputComponents: #cbcbcb;
+
+%text-input-components {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid $colorBorderInputComponents;
+}
+
+.article-editor {
+  input {
+    @extend %text-input-components;
+    margin-bottom: 10px;
+  }
+  textarea {
+    @extend %text-input-components;
+    resize: vertical;
+  }
+}

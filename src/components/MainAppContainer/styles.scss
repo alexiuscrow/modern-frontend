@@ -1,0 +1,57 @@
+//colors
+$colorAnchor: #544093;
+$colorOutline: #9a39d9;
+
+//fonts
+$font: 'Inter UI';
+
+//urls
+$fontUrl: url('Inter-UI-Regular.woff');
+
+@font-face {
+  font-family: $font;
+  src: $fontUrl;
+}
+#main-app-container {
+  * {
+    outline-color: $colorOutline;
+    font-family: $font, sans-serif;
+    color: #2c2c2c;
+  }
+  > * {
+    width: 60%;
+    min-width: 600px;
+    padding: 16px;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+    color: $colorAnchor;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  header {
+    text-align: center;
+  }
+  main {
+    h2 {
+      margin-top: 0;
+      display: inline-block;
+    }
+    #modify-block:before {
+      display: block;
+      margin-bottom: 8px;
+      content: 'Modify section';
+    }
+    #view-block:before {
+      display: block;
+      margin-bottom: 8px;
+      content: 'Result section';
+      margin-top: 20px;
+    }
+  }
+  footer {
+    text-align: center;
+  }
+}
